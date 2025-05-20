@@ -36,24 +36,17 @@ public class Card implements Comparable<Card>{
             if (this.name.equals(this.nameOrder[i])){
                 myNameValue = i;
             }
-  ;
+            if (card.getName().equals(this.nameOrder[i])){
+                newNameValue = i;
+            }
         }
 
         for (int i = 0; i<this.suitOrder.length; i++){
             if (this.suit.equals(this.suitOrder[i])){             
                 mySuitVal = i;
             }
-        }
-
-        for (int i = 0; i<this.suitOrder.length; i++){
             if (card.getSuit().equals(this.suitOrder[i])){
                 newSuitVal = i;
-            }
-        }
-
-        for (int i = 0; i<this.nameOrder.length; i++){
-            if (card.getName().equals(this.nameOrder[i])){
-                newNameValue = i;
             }
         }
 
